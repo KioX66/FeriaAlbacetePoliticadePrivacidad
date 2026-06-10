@@ -1,281 +1,326 @@
-
-<div class="privacy-page">
-  <!-- Header decorativo -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad - Feriapp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: #FBF9F9; color: #5B403D; line-height: 1.6; }
+    .privacy-header { background: #D32F2F; color: white; padding: 2rem 1rem; text-align: center; }
+    .privacy-header h1 { font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 700; }
+    .privacy-header p { font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem; }
+    .lang-switcher { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+    .lang-btn { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); color: white; padding: 0.4rem 1rem; border-radius: 20px; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
+    .lang-btn:hover { background: rgba(255,255,255,0.3); }
+    .lang-btn.active { background: white; color: #D32F2F; }
+    .privacy-main { max-width: 800px; margin: 0 auto; padding: 1rem; }
+    .privacy-card { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .privacy-card h2 { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 700; color: #1B1C1C; margin: 0 0 0.75rem 0; display: flex; align-items: center; gap: 0.5rem; }
+    .privacy-card h3 { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 600; color: #1B1C1C; margin: 1rem 0 0.5rem 0; }
+    .privacy-card p { font-size: 0.9rem; margin-bottom: 0.75rem; }
+    .privacy-card ul { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    .privacy-card li { font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .privacy-card a { color: #D32F2F; text-decoration: none; font-weight: 500; }
+    .privacy-card a:hover { text-decoration: underline; }
+    .privacy-footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #8F6F6C; }
+    .hide { display: none; }
+  </style>
+</head>
+<body>
   <header class="privacy-header">
-    <div class="header-decoration">
-      <span class="header-icon">
-        <img src="assets/icon/feriaAppIcon.png" alt="Feria de Albacete" />
-      </span>
-    </div>
-    <div class="header-text">
-      <h1 class="header-title">Política de Privacidad</h1>
-      <p class="header-subtitle">Feria de Albacete 2026</p>
+    <h1>Política de Privacidad</h1>
+    <p>Feriapp - Feria de Albacete 2026</p>
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="showLang('es')">ES</button>
+      <button class="lang-btn" onclick="showLang('en')">EN</button>
+      <button class="lang-btn" onclick="showLang('fr')">FR</button>
+      <button class="lang-btn" onclick="showLang('de')">DE</button>
     </div>
   </header>
 
-  <!-- Contenido principal -->
   <main class="privacy-main">
-    <!-- Introducción -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">shield</span>
-      </div>
-      <div class="card-content">
-        <h2>🔒 Tu privacidad importa</h2>
-        <p>
-          Esta Política de Privacidad describe cómo Feriapp recopila, usa y protege 
-          tu información cuando utilizas nuestra aplicación. Al usar Feriapp, aceptas 
-          las prácticas descritas aquí.
-        </p>
-      </div>
-    </section>
+    <div id="es">
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">shield</span> Tu privacidad importa</h2>
+        <p>Esta Política de Privacidad describe cómo Feriapp recopila, usa y protege tu información cuando utilizas nuestra aplicación. Al usar Feriapp, aceptas las prácticas descritas aquí.</p>
+      </section>
 
-    <!-- Información que recopilamos -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">folder_open</span>
-      </div>
-      <div class="card-content">
-        <h2>📋 Información que recopilamos</h2>
-        
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">folder_open</span> Información que recopilamos</h2>
         <h3>Datos personales</h3>
-        <p>
-          Feriapp <strong>NO recopila</strong> datos personales identificables como nombre, email, 
-          teléfono o dirección. No requerimos registro ni creación de cuentas.
-        </p>
-
+        <p>Feriapp <strong>NO recopila</strong> datos personales identificables como nombre, email, teléfono o dirección. No requerimos registro ni creación de cuentas.</p>
         <h3>Datos técnicos</h3>
-        <p>
-          De manera automática, podemos recopilar información técnica limitada para mejorar 
-          la aplicación:
-        </p>
-        <ul>
-          <li>Idioma seleccionado en la app</li>
-          <li>Versión de Android/iOS y modelo de dispositivo</li>
-          <li>Fechas y frecuencia de uso de la aplicación</li>
-          <li>Errores técnicos para diagnóstico</li>
-        </ul>
-
+        <p>De manera automática, podemos recopilar información técnica limitada para mejorar la aplicación: idioma seleccionado, versión del dispositivo, frecuencia de uso y errores técnicos.</p>
         <h3>Datos de localización</h3>
-        <p>
-          Utilizamos tu ubicación <strong>solo</strong> para:
-        </p>
-        <ul>
-          <li>Mostrar tu posición en el mapa del recinto ferial</li>
-          <li>Calcular rutas hacia baños, puertas y paradas de taxi cercanas</li>
-          <li>Navegación directa a Google Maps</li>
-        </ul>
-        <p>
-          Tu ubicación <strong>nunca se comparte</strong> con terceros ni otros usuarios. 
-          Puedes desactivar el GPS en cualquier momento.
-        </p>
-
-        <h3>Datos de Firebase</h3>
-        <p>
-          Usamos Firebase de Google para servicios de notificaciones push y mensajería social. 
-          Firebase puede recopilar datos analíticos estándar (como se describe en su 
-          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">política de privacidad</a>).
-        </p>
-      </div>
-    </section>
-
-    <!-- Cómo usamos la información -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">settings</span>
-      </div>
-      <div class="card-content">
-        <h2>⚙️ Cómo usamos la información</h2>
+        <p>Utilizamos tu ubicación <strong>solo</strong> para mostrar tu posición en el mapa del recinto ferial, calcular rutas hacia baños, puertas y paradas de taxi, y navegación directa a Google Maps. Tu ubicación nunca se comparte con terceros ni otros usuarios.</p>
+      </section>
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">settings</span> Cómo usamos la información</h2>
         <ul>
           <li><strong>Mejorar la experiencia:</strong> Adaptar la app a tu idioma y dispositivo</li>
           <li><strong>Funcionalidades del mapa:</strong> Mostrar tu ubicación y calcular rutas</li>
           <li><strong>Notificaciones:</strong> Enviar recordatorios de eventos y mensajes sociales</li>
-          <li><strong>Mensajería social:</strong> Permitir comunicación entre usuarios de grupos</li>
+          <li><strong>Mensajería social:</strong> Permitir comunicación entre usuarios de grupos privados</li>
           <li><strong>Analíticas:</strong> Entender cómo usas la app para mejorarla</li>
-          <li><strong>Diagnóstico:</strong> Detectar y corregir errores técnicos</li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <!-- Almacenamiento local -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">storage</span>
-      </div>
-      <div class="card-content">
-        <h2>💾 Almacenamiento local</h2>
-        <p>
-          Feriapp guarda datos <strong>únicamente en tu dispositivo</strong> para:
-        </p>
-        <ul>
-          <li>Favoritos (eventos y casetas guardados)</li>
-          <li>Grupos y contactos creados por ti</li>
-          <li>Preferencias de idioma y configuración</li>
-          <li>Mapa descargado para uso sin conexión a internet</li>
-          <li>Recordatorios programados</li>
-        </ul>
-        <p>
-          Estos datos <strong>nunca se envían a nuestros servidores</strong>. Si desinstalas la app, 
-          todos los datos locales se eliminan.
-        </p>
-      </div>
-    </section>
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">storage</span> Almacenamiento local</h2>
+        <p>Feriapp guarda datos <strong>únicamente en tu dispositivo</strong> para: favoritos, grupos creados, preferencias de idioma, mapa sin conexión y recordatorios. Estos datos nunca se envían a nuestros servidores. Si desinstalas la app, todos los datos locales se eliminan.</p>
+      </section>
 
-    <!-- Mensajería social -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">group</span>
-      </div>
-      <div class="card-content">
-        <h2>💬 Mensajería social</h2>
-        <p>
-          La función social te permite crear grupos y enviar mensajes a otros usuarios. 
-          Ten en cuenta que:
-        </p>
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">group</span> Mensajería social</h2>
+        <p>La función social te permite crear grupos privados con código personalizado y enviar mensajes a otros usuarios. Ten en cuenta que:</p>
         <ul>
-          <li>Los mensajes se envían a través de Firebase Cloud Messaging</li>
           <li>No almacenamos el contenido de los mensajes enviados</li>
-          <li>Los grupos se crean con códigos públicos que cualquiera puede conocer</li>
-          <li>No verificamos la identidad de los usuarios</li>
+          <li>Los grupos son privados y solo accesibles con el código del grupo</li>
+          <li>Puedes salir de cualquier grupo en cualquier momento</li>
         </ul>
-        <p>
-          <strong>Responsabilidad del usuario:</strong> Eres responsable del contenido que 
-          compartes con otros usuarios. No uses la mensajería para enviar spam, contenido 
-          ofensivo o ilegal.
-        </p>
-      </div>
-    </section>
+        <p><strong>Responsabilidad del usuario:</strong> Eres responsable del contenido que compartes con otros usuarios.</p>
+      </section>
 
-    <!-- Cookies y publicidad -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">ads_click</span>
-      </div>
-      <div class="card-content">
-        <h2>📢 Publicidad</h2>
-        <p>
-          Feriapp puede mostrar anuncios mediante Google AdMob. AdMob puede utilizar 
-          identificadores de publicidad para mostrar anuncios relevantes. Puedes:
-        </p>
-        <ul>
-          <li>Limitar el seguimiento de anuncios en la configuración de tu dispositivo</li>
-          <li>Consultar la <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">guía de privacidad de Google AdMob</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Terceros -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">extension</span>
-      </div>
-      <div class="card-content">
-        <h2>🔗 Servicios de terceros</h2>
-        <p>
-          Feriapp utiliza los siguientes servicios externos:
-        </p>
-        <ul>
-          <li><strong>Google Firebase:</strong> Notificaciones push y mensajería</li>
-          <li><strong>Google AdMob:</strong> Servicios de publicidad</li>
-          <li><strong>Google Maps:</strong> Navegación y rutas (al abrir enlaces externos)</li>
-          <li><strong>Leaflet/OpenStreetMap:</strong> Mapa interactivo del recinto</li>
-        </ul>
-        <p>
-          Estos servicios tienen sus propias políticas de privacidad. Te recomendamos 
-          consultarlas. Feriapp no controla ni es responsable de las prácticas de estos 
-          servicios terceros.
-        </p>
-      </div>
-    </section>
-
-    <!-- Derechos del usuario -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">verified_user</span>
-      </div>
-      <div class="card-content">
-        <h2>✅ Tus derechos</h2>
-        <p>
-          Como usuario de Feriapp, tienes derecho a:
-        </p>
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">verified_user</span> Tus derechos</h2>
         <ul>
           <li><strong>Acceso:</strong> Saber qué datos almacenamos en tu dispositivo</li>
           <li><strong>Eliminación:</strong> Desinstalar la app para eliminar todos tus datos locales</li>
-          <li><strong>Oposición:</strong> No usar funciones específicas (como la mensajería social)</li>
-          <li><strong>Portabilidad:</strong> Exportar tus datos locales si lo solicitas</li>
+          <li><strong>Oposición:</strong> No usar funciones específicas</li>
         </ul>
-        <p>
-          Para ejercer estos derechos, contáctanos en el correo indicado abajo.
-        </p>
-      </div>
-    </section>
+        <p>Para ejercer estos derechos, contáctanos en el correo indicado abajo.</p>
+      </section>
 
-    <!-- Retención de datos -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">schedule</span>
-      </div>
-      <div class="card-content">
-        <h2>⏰ Retención de datos</h2>
-        <p>
-          Los datos almacenados localmente se conservan mientras uses la app. Cuando 
-          desinstales Feriapp o borres los datos de la aplicación, toda la información 
-          se elimina permanentemente de tu dispositivo.
-        </p>
-        <p>
-          Los datos analíticos de Firebase se retienen durante el período mínimo necesario 
-          según las políticas de Google.
-        </p>
-      </div>
-    </section>
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">mail</span> Contacto</h2>
+        <p>Si tienes preguntas o deseas ejercer tus derechos, contáctanos:</p>
+        <a href="mailto:heipdesing.soporte@gmail.com">heipdesing.soporte@gmail.com</a>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #8F6F6C;">Responderemos a tu solicitud en un plazo máximo de 30 días.</p>
+      </section>
 
-    <!-- Cambios en la política -->
-    <section class="privacy-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">edit</span>
-      </div>
-      <div class="card-content">
-        <h2>📝 Cambios en esta política</h2>
-        <p>
-          Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos 
-          sobre cambios significativos actualizando la fecha de revisión y, si es necesario, 
-          mediante notificaciones push dentro de la aplicación.
-        </p>
-        <p>
-          Te recomendamos revisar esta página periódicamente para estar informado sobre 
-          cómo protegemos tu información.
-        </p>
-      </div>
-    </section>
+      <footer class="privacy-footer">
+        <p>Última actualización: Junio 2026</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">Feriapp no es una aplicación oficial del Ayuntamiento de Albacete. Es un proyecto independiente creado con cariño.</p>
+      </footer>
+    </div>
+    <div id="en" class="hide">
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">shield</span> Your privacy matters</h2>
+        <p>This Privacy Policy describes how Feriapp collects, uses and protects your information when you use our application. By using Feriapp, you agree to the practices described here.</p>
+      </section>
 
-    <!-- Contacto -->
-    <section class="privacy-card contact-card">
-      <div class="card-icon">
-        <span class="material-symbols-outlined">mail</span>
-      </div>
-      <div class="card-content">
-        <h2>✉️ Contacto</h2>
-        <p>
-          Si tienes preguntas, dudas o deseas ejercer tus derechos sobre tus datos, 
-          contáctanos:
-        </p>
-        <a href="mailto:contacto@feriapp.es" class="contact-link">
-          <span class="material-symbols-outlined">email</span>
-          contacto@feriapp.es
-        </a>
-        <p class="contact-note">
-          Responderemos a tu solicitud en un plazo máximo de 30 días.
-        </p>
-      </div>
-    </section>
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">folder_open</span> Information we collect</h2>
+        <h3>Personal data</h3>
+        <p>Feriapp <strong>does NOT collect</strong> identifiable personal data such as name, email, phone or address. We do not require registration or account creation.</p>
+        <h3>Technical data</h3>
+        <p>Automatically, we may collect limited technical information to improve the application: selected language, device version, usage frequency and technical errors.</p>
+        <h3>Location data</h3>
+        <p>We use your location <strong>only</strong> to show your position on the fairground map, calculate routes to restrooms, doors and taxi stops, and direct navigation to Google Maps. Your location is never shared with third parties or other users.</p>
+            </section>
 
-    <!-- Footer -->
-    <footer class="privacy-footer">
-      <p>Última actualización: Junio 2026</p>
-      <p class="footer-note">
-        Feriapp no es una aplicación oficial del Ayuntamiento de Albacete ni de la Feria de Albacete. 
-        Es un proyecto independiente creado con cariño para ayudar a disfrutar la feria.
-      </p>
-    </footer>
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">settings</span> How we use the information</h2>
+        <ul>
+          <li><strong>Improve experience:</strong> Adapt the app to your language and device</li>
+          <li><strong>Map features:</strong> Show your location and calculate routes</li>
+          <li><strong>Notifications:</strong> Send event reminders and social messages</li>
+          <li><strong>Social messaging:</strong> Allow communication between private group users</li>
+          <li><strong>Analytics:</strong> Understand how you use the app to improve it</li>
+        </ul>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">storage</span> Local storage</h2>
+        <p>Feriapp stores data <strong>only on your device</strong> for: favorites, created groups, language preferences, offline map and reminders. This data is never sent to our servers. If you uninstall the app, all local data is deleted.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">group</span> Social messaging</h2>
+        <p>The social feature allows you to create private groups with custom codes and send messages to other users. Please note that:</p>
+        <ul>
+           <li>We do not store the content of sent messages</li>
+          <li>Groups are private and only accessible with the group code</li>
+          <li>You can leave any group at any time</li>
+        </ul>
+        <p><strong>User responsibility:</strong> You are responsible for the content you share with other users.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">verified_user</span> Your rights</h2>
+        <ul>
+          <li><strong>Access:</strong> Know what data we store on your device</li>
+          <li><strong>Deletion:</strong> Uninstall the app to delete all your local data</li>
+          <li><strong>Opposition:</strong> Not use specific features</li>
+        </ul>
+        <p>To exercise these rights, contact us at the email below.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">mail</span> Contact</h2>
+        <p>If you have questions or wish to exercise your rights, contact us:</p>
+        <a href="mailto:heipdesing.soporte@gmail.com">heipdesing.soporte@gmail.com</a>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #8F6F6C;">We will respond to your request within 30 days.</p>
+      </section>
+
+      <footer class="privacy-footer">
+        <p>Last update: June 2026</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">Feriapp is not an official application of Albacete City Council. It is an independent project created with care.</p>
+      </footer>
+    </div>
+    <div id="fr" class="hide">
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">shield</span> Votre vie privée compte</h2>
+        <p>Cette Politique de Confidentialité décrit comment Feriapp collecte, utilise et protège vos informations lorsque vous utilisez notre application. En utilisant Feriapp, vous acceptez les pratiques décrites ici.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">folder_open</span> Informations que nous collectons</h2>
+        <h3>Données personnelles</h3>
+        <p>Feriapp <strong>NE collecte PAS</strong> de données personnelles identifiables comme le nom, l'email, le téléphone ou l'adresse. Nous ne demandons pas d'inscription ni de création de compte.</p>
+        <h3>Données techniques</h3>
+        <p>Automatiquement, nous pouvons collecter des informations techniques limitées pour améliorer l'application : langue sélectionnée, version de l'appareil, fréquence d'utilisation et erreurs techniques.</p>
+        <h3>Données de localisation</h3>
+        <p>Nous utilisons votre emplacement <strong>uniquement</strong> pour montrer votre position sur la carte du site de la feria, calculer les routes vers les toilettes, portes et arrêts de taxi, et la navigation directe vers Google Maps. Votre emplacement n'est jamais partagé avec des tiers ou d'autres utilisateurs.</p>
+         </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">settings</span> Comment nous utilisons les informations</h2>
+        <ul>
+          <li><strong>Améliorer l'expérience :</strong> Adapter l'app à votre langue et appareil</li>
+          <li><strong>Fonctionnalités de la carte :</strong> Montrer votre emplacement et calculer les routes</li>
+          <li><strong>Notifications :</strong> Envoyer des rappels d'événements et messages sociaux</li>
+          <li><strong>Messagerie sociale :</strong> Permettre la communication entre utilisateurs de groupes privés</li>
+          <li><strong>Analytique :</strong> Comprendre comment vous utilisez l'app pour l'améliorer</li>
+        </ul>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">storage</span> Stockage local</h2>
+        <p>Feriapp stocke les données <strong>uniquement sur votre appareil</strong> pour : favoris, groupes créés, préférences de langue, carte hors-ligne et rappels. Ces données ne sont jamais envoyées à nos serveurs. Si vous désinstallez l'app, toutes les données locales sont supprimées.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">group</span> Messagerie sociale</h2>
+        <p>La fonction sociale vous permet de créer des groupes privés avec des codes personnalisés et d'envoyer des messages à d'autres utilisateurs. Veuillez noter que :</p>
+        <ul>
+          <li>Nous ne stockons pas le contenu des messages envoyés</li>
+          <li>Les groupes sont privés et accessibles uniquement avec le code du groupe</li>
+          <li>Vous pouvez quitter n'importe quel groupe à tout moment</li>
+        </ul>
+        <p><strong>Responsabilité de l'utilisateur :</strong> Vous êtes responsable du contenu que vous partagez avec d'autres utilisateurs.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">verified_user</span> Vos droits</h2>
+        <ul>
+          <li><strong>Accès :</strong> Savoir quelles données nous stockons sur votre appareil</li>
+          <li><strong>Suppression :</strong> Désinstaller l'app pour supprimer toutes vos données locales</li>
+          <li><strong>Opposition :</strong> Ne pas utiliser certaines fonctionnalités</li>
+        </ul>
+        <p>Pour exercer ces droits, contactez-nous à l'email ci-dessous.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">mail</span> Contact</h2>
+        <p>Si vous avez des questions ou souhaitez exercer vos droits, contactez-nous :</p>
+        <a href="mailto:heipdesing.soporte@gmail.com">heipdesing.soporte@gmail.com</a>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #8F6F6C;">Nous répondrons à votre demande dans un délai maximal de 30 jours.</p>
+      </section>
+
+      <footer class="privacy-footer">
+        <p>Dernière mise à jour : Juin 2026</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">Feriapp n'est pas une application officielle de la mairie d'Albacete. C'est un projet indépendant créé avec soin.</p>
+      </footer>
+    </div>
+    <div id="de" class="hide">
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">shield</span> Ihr Datenschutz ist wichtig</h2>
+        <p>Diese Datenschutzrichtlinie beschreibt, wie Feriapp Ihre Informationen sammelt, verwendet und schützt, wenn Sie unsere Anwendung nutzen. Durch die Nutzung von Feriapp stimmen Sie den hier beschriebenen Praktiken zu.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">folder_open</span> Informationen, die wir sammeln</h2>
+        <h3>Personenbezogene Daten</h3>
+        <p>Feriapp <strong> sammelt KEINE</strong> identifizierbaren personenbezogenen Daten wie Name, E-Mail, Telefon oder Adresse. Wir erfordern keine Registrierung oder Kontenerstellung.</p>
+        <h3>Technische Daten</h3>
+        <p>Automatisch können wir begrenzte technische Informationen sammeln, um die Anwendung zu verbessern: ausgewählte Sprache, Geräteversion, Nutzungshäufigkeit und technische Fehler.</p>
+        <h3>Standortdaten</h3>
+        <p>Wir verwenden Ihren Standort <strong>nur</strong>, um Ihre Position auf der Karte des Messegeländes anzuzeigen, Routen zu Toiletten, Türen und Taxistationen zu berechnen und die direkte Navigation zu Google Maps. Ihr Standort wird niemals mit Dritten oder anderen Nutzern geteilt.</p>
+           </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">settings</span> Wie wir die Informationen verwenden</h2>
+        <ul>
+          <li><strong>Erlebnis verbessern:</strong> Die App an Ihre Sprache und Ihr Gerät anpassen</li>
+          <li><strong>Kartfunktionen:</strong> Ihren Standort anzeigen und Routen berechnen</li>
+          <li><strong>Benachrichtigungen:</strong> Ereigniserinnerungen und soziale Nachrichten senden</li>
+          <li><strong>Soziale Messaging:</strong> Kommunikation zwischen privaten Gruppenbenutzern ermöglichen</li>
+          <li><strong>Analytik:</strong> Verstehen, wie Sie die App nutzen, um sie zu verbessern</li>
+        </ul>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">storage</span> Lokaler Speicher</h2>
+        <p>Feriapp speichert Daten <strong>nur auf Ihrem Gerät</strong> für: Favoriten, erstellte Gruppen, Sprachpräferenzen, Offline-Karte und Erinnerungen. Diese Daten werden niemals an unsere Server gesendet. Wenn Sie die App deinstallieren, werden alle lokalen Daten gelöscht.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">group</span> Soziale Messaging</h2>
+        <p>Die soziale Funktion ermöglicht es Ihnen, private Gruppen mit benutzerdefinierten Codes zu erstellen und Nachrichten an andere Benutzer zu senden. Bitte beachten Sie:</p>
+        <ul>
+            <li>Wir speichern nicht den Inhalt gesendeter Nachrichten</li>
+          <li>Gruppen sind privat und nur mit dem Gruppencode zugänglich</li>
+          <li>Sie können jede Gruppe jederzeit verlassen</li>
+        </ul>
+        <p><strong>Nutzerverantwortung:</strong> Sie sind verantwortlich für den Inhalt, den Sie mit anderen Nutzern teilen.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">verified_user</span> Ihre Rechte</h2>
+        <ul>
+          <li><strong>Zugang:</strong> Wissen, welche Daten wir auf Ihrem Gerät speichern</li>
+          <li><strong>Löschung:</strong> Die App deinstallieren, um alle lokalen Daten zu löschen</li>
+          <li><strong>Widerspruch:</strong> Bestimmte Funktionen nicht nutzen</li>
+        </ul>
+        <p>Um diese Rechte auszuüben, kontaktieren Sie uns über die E-Mail unten.</p>
+      </section>
+
+      <section class="privacy-card">
+        <h2><span class="material-icons-outlined">mail</span> Kontakt</h2>
+        <p>Wenn Sie Fragen haben oder Ihre Rechte ausüben möchten, kontaktieren Sie uns:</p>
+        <a href="mailto:heipdesing.soporte@gmail.com">heipdesing.soporte@gmail.com</a>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #8F6F6C;">Wir werden Ihre Anfrage innerhalb von maximal 30 Tagen beantworten.</p>
+      </section>
+
+      <footer class="privacy-footer">
+        <p>Letzte Aktualisierung: Juni 2026</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">Feriapp ist keine offizielle Anwendung des Stadtrats von Albacete. Es ist ein unabhängiges Projekt, das mit Sorgfalt erstellt wurde.</p>
+      </footer>
+    </div>
   </main>
-</div>
+
+  <script>
+    function showLang(lang) {
+      // Ocultar todos los idiomas
+      document.getElementById('es').classList.add('hide');
+      document.getElementById('en').classList.add('hide');
+      document.getElementById('fr').classList.add('hide');
+      document.getElementById('de').classList.add('hide');
+      
+      // Mostrar el idioma seleccionado
+      document.getElementById(lang).classList.remove('hide');
+      
+      // Actualizar botones
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      
+      // Actualizar lang del html
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>
